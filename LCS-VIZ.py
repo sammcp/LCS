@@ -15,14 +15,23 @@ def print_lcs(b,X,i,j):
          print_lcs(b,X,(i-1),(j))
     else:
          print_lcs(b,X,(i),(j-1))
+
+def get_user_input(): 
+    print("please input the first string")
+    string1 = input()
+    print("please input the second string")
+    string2 = input()
+    return string1, string2
+
+        
         
 
                         
 
 #X = "ACACGCTAG"
 #Y = "CCTATGGCTG"
-X = "ATATGGCTG" 
-Y = "CAGATGAT"
+
+X,Y = get_user_input()
 m = len(X)
 n = len(Y)
 n2 = n + 1
